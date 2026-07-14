@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew Haven Coffee Shop | Contact Us</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="brand">Brew <span>Haven</span></a>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="height:32vh; min-height:200px; background-image:url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80');">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>Got a question, feedback or just want to say hi?</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-wrap">
+
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>We'd love to hear from you. Drop by, call us, or just fill out the form and we'll get back to you as soon as we can.</p>
+
+      <table>
+        <tr>
+          <td><strong>Address</strong></td>
+          <td>12, Lake View Road, Chennai, Tamil Nadu - 600028</td>
+        </tr>
+        <tr>
+          <td><strong>Phone</strong></td>
+          <td>+91 98765 43210</td>
+        </tr>
+        <tr>
+          <td><strong>Email</strong></td>
+          <td>hello@brewhaven.com</td>
+        </tr>
+        <tr>
+          <td><strong>Monday - Friday</strong></td>
+          <td>8:00 AM - 10:00 PM</td>
+        </tr>
+        <tr>
+          <td><strong>Saturday - Sunday</strong></td>
+          <td>9:00 AM - 11:00 PM</td>
+        </tr>
+      </table>
+
+      <h3 style="margin-top:24px; color:var(--secondary);">Follow Us</h3>
+      <ul style="margin-top:8px;">
+        <li>Instagram: @brewhaven.cafe</li>
+        <li>Facebook: /brewhavencoffee</li>
+        <li>Twitter: @brewhaven_in</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h2 style="margin-bottom:16px;">Send Us a Message</h2>
+
+      <div class="success-box" id="formSuccess"></div>
+
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="cname">Full Name</label>
+          <input type="text" id="cname" name="cname" placeholder="Enter your name">
+          <span class="error-msg" id="nameErr"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="cemail">Email Address</label>
+          <input type="text" id="cemail" name="cemail" placeholder="you@example.com">
+          <span class="error-msg" id="emailErr"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="cphone">Phone Number</label>
+          <input type="text" id="cphone" name="cphone" placeholder="10-digit number">
+          <span class="error-msg" id="phoneErr"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="csubject">Subject</label>
+          <select id="csubject" name="csubject">
+            <option value="">-- Select Subject --</option>
+            <option value="feedback">Feedback</option>
+            <option value="order">Order Query</option>
+            <option value="reservation">Table Reservation</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="error-msg" id="subjectErr"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="cmessage">Message</label>
+          <textarea id="cmessage" name="cmessage" rows="4" placeholder="Type your message here..."></textarea>
+          <span class="error-msg" id="messageErr"></span>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4 class="logo-font" style="font-size:1.3rem;">Brew Haven</h4>
+      <p>A cozy little coffee shop started by two college friends who loved coffee a little too much.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <p>12, Lake View Road,<br>Chennai, Tamil Nadu</p>
+      <p>Open: 8:00 AM - 10:00 PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Brew Haven Coffee Shop. Made for Full Stack Web Dev Lab | B.Tech IT 3rd Year</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

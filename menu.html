@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew Haven Coffee Shop | Menu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="brand">Brew <span>Haven</span></a>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="height:32vh; min-height:200px; background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80');">
+  <div class="hero-content">
+    <h1>Our Menu</h1>
+    <p>Hot Coffee | Cold Coffee | Desserts | Snacks</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="menu-tabs">
+      <button class="menu-tab-btn active-tab" data-target="all">All</button>
+      <button class="menu-tab-btn" data-target="hot">Hot Coffee</button>
+      <button class="menu-tab-btn" data-target="cold">Cold Coffee</button>
+      <button class="menu-tab-btn" data-target="desserts">Desserts</button>
+      <button class="menu-tab-btn" data-target="snacks">Snacks</button>
+    </div>
+
+    <!-- HOT COFFEE -->
+    <div class="menu-category" id="hot">
+      <h2 class="menu-category-title">Hot Coffee</h2>
+      <div class="grid-3">
+
+        <div class="card menu-card">
+          <span class="bestseller-tag">Bestseller</span>
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Espresso">
+          <div class="card-body">
+            <h3>Classic Espresso</h3>
+            <p>Strong shot of pure espresso, no fuss, no sugar added.</p>
+            <p class="rating">★★★★★ (4.9)</p>
+            <p class="price-tag">₹90</p>
+            <button class="btn order-btn" data-item="Classic Espresso">Order</button>
+          </div>
+        </div>
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Cappuccino">
+          <div class="card-body">
+            <h3>Cappuccino</h3>
+            <p>Equal parts espresso, steamed milk and thick foam.</p>
+            <p class="rating">★★★★☆ (4.6)</p>
+            <p class="price-tag">₹120</p>
+            <button class="btn order-btn" data-item="Cappuccino">Order</button>
+          </div>
+        </div>
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Hot Chocolate">
+          <div class="card-body">
+            <h3>Hot Chocolate</h3>
+            <p>Rich melted chocolate and milk, topped with marshmallows.</p>
+            <p class="rating">★★★★☆ (4.5)</p>
+            <p class="price-tag">₹130</p>
+            <button class="btn order-btn" data-item="Hot Chocolate">Order</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COLD COFFEE -->
+    <div class="menu-category" id="cold">
+      <h2 class="menu-category-title">Cold Coffee</h2>
+      <div class="grid-3">
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Iced Latte">
+          <div class="card-body">
+            <h3>Iced Latte</h3>
+            <p>Chilled espresso and milk served over a tall glass of ice.</p>
+            <p class="rating">★★★★☆ (4.4)</p>
+            <p class="price-tag">₹140</p>
+            <button class="btn order-btn" data-item="Iced Latte">Order</button>
+          </div>
+        </div>
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Cold Brew">
+          <div class="card-body">
+            <h3>Cold Brew</h3>
+            <p>Steeped 18 hours for a smooth, low-acid coffee taste.</p>
+            <p class="rating">★★★★★ (4.8)</p>
+            <p class="price-tag">₹150</p>
+            <button class="btn order-btn" data-item="Cold Brew">Order</button>
+          </div>
+        </div>
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Frappe">
+          <div class="card-body">
+            <h3>Choco Frappe</h3>
+            <p>Blended coffee, chocolate and ice, topped with whipped cream.</p>
+            <p class="rating">★★★★☆ (4.6)</p>
+            <p class="price-tag">₹160</p>
+            <button class="btn order-btn" data-item="Choco Frappe">Order</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-category" id="desserts">
+      <h2 class="menu-category-title">Desserts</h2>
+      <div class="grid-3">
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Chocolate Cake">
+          <div class="card-body">
+            <h3>Chocolate Fudge Cake</h3>
+            <p>Dense, moist chocolate cake made fresh every morning.</p>
+            <p class="rating">★★★★★ (4.9)</p>
+            <p class="price-tag">₹110</p>
+            <button class="btn order-btn" data-item="Chocolate Fudge Cake">Order</button>
+          </div>
+        </div>
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Cheesecake">
+          <div class="card-body">
+            <h3>Blueberry Cheesecake</h3>
+            <p>Creamy cheesecake topped with a tangy blueberry compote.</p>
+            <p class="rating">★★★★☆ (4.7)</p>
+            <p class="price-tag">₹150</p>
+            <button class="btn order-btn" data-item="Blueberry Cheesecake">Order</button>
+          </div>
+        </div>
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Tiramisu">
+          <div class="card-body">
+            <h3>Tiramisu</h3>
+            <p>Coffee soaked ladyfingers layered with mascarpone cream.</p>
+            <p class="rating">★★★★★ (4.8)</p>
+            <p class="price-tag">₹170</p>
+            <button class="btn order-btn" data-item="Tiramisu">Order</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SNACKS -->
+    <div class="menu-category" id="snacks">
+      <h2 class="menu-category-title">Snacks</h2>
+      <div class="grid-3">
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Sandwich">
+          <div class="card-body">
+            <h3>Grilled Veg Sandwich</h3>
+            <p>Loaded with veggies and cheese, grilled to a crisp.</p>
+            <p class="rating">★★★★☆ (4.3)</p>
+            <p class="price-tag">₹100</p>
+            <button class="btn order-btn" data-item="Grilled Veg Sandwich">Order</button>
+          </div>
+        </div>
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Croissant">
+          <div class="card-body">
+            <h3>Butter Croissant</h3>
+            <p>Flaky, buttery and baked fresh every day.</p>
+            <p class="rating">★★★★☆ (4.5)</p>
+            <p class="price-tag">₹80</p>
+            <button class="btn order-btn" data-item="Butter Croissant">Order</button>
+          </div>
+        </div>
+
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Muffin">
+          <div class="card-body">
+            <h3>Blueberry Muffin</h3>
+            <p>Soft muffin loaded with fresh blueberries.</p>
+            <p class="rating">★★★★☆ (4.4)</p>
+            <p class="price-tag">₹90</p>
+            <button class="btn order-btn" data-item="Blueberry Muffin">Order</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4 class="logo-font" style="font-size:1.3rem;">Brew Haven</h4>
+      <p>A cozy little coffee shop started by two college friends who loved coffee a little too much.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <p>12, Lake View Road,<br>Chennai, Tamil Nadu</p>
+      <p>Open: 8:00 AM - 10:00 PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Brew Haven Coffee Shop. Made for Full Stack Web Dev Lab | B.Tech IT 3rd Year</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

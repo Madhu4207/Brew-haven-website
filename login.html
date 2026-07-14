@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew Haven Coffee Shop | Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="brand">Brew <span>Haven</span></a>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="login.html" class="active">Login</a></li>
+    </ul>
+  </div>
+</header>
+
+<section style="padding-bottom:60px;">
+  <div class="container">
+
+    <div class="auth-wrap">
+      <div class="auth-tabs">
+        <button class="auth-tab-btn active-tab" id="loginTabBtn">Login</button>
+        <button class="auth-tab-btn" id="signupTabBtn">Sign Up</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <div class="auth-form show" id="loginForm">
+        <h2>Welcome Back</h2>
+        <form id="loginFormEl" novalidate>
+          <div class="form-group">
+            <label for="lemail">Email Address</label>
+            <input type="text" id="lemail" placeholder="you@example.com">
+            <span class="error-msg" id="lemailErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="lpass">Password</label>
+            <input type="password" id="lpass" placeholder="Enter password">
+            <span class="error-msg" id="lpassErr"></span>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+        <p class="small-note">Don't have an account? Click "Sign Up" above.</p>
+      </div>
+
+      <!-- SIGNUP FORM -->
+      <div class="auth-form" id="signupForm">
+        <h2>Create Account</h2>
+        <form id="signupFormEl" novalidate>
+          <div class="form-group">
+            <label for="sname">Full Name</label>
+            <input type="text" id="sname" placeholder="Enter your name">
+            <span class="error-msg" id="snameErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="semail">Email Address</label>
+            <input type="text" id="semail" placeholder="you@example.com">
+            <span class="error-msg" id="semailErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="spass">Password</label>
+            <input type="password" id="spass" placeholder="Create a password">
+            <span class="error-msg" id="spassErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="scpass">Confirm Password</label>
+            <input type="password" id="scpass" placeholder="Re-enter password">
+            <span class="error-msg" id="scpassErr"></span>
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="small-note">Already have an account? Click "Login" above.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4 class="logo-font" style="font-size:1.3rem;">Brew Haven</h4>
+      <p>A cozy little coffee shop started by two college friends who loved coffee a little too much.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <p>12, Lake View Road,<br>Chennai, Tamil Nadu</p>
+      <p>Open: 8:00 AM - 10:00 PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Brew Haven Coffee Shop. Made for Full Stack Web Dev Lab | B.Tech IT 3rd Year</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
